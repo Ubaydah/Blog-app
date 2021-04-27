@@ -1,0 +1,10 @@
+{% extends 'post_detail.html' %}
+
+{% block content %}
+<h3>New comment</h1>
+<form action="" method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Save">
+
+</form>
+{% endblock content %}
